@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saaddi Moda Fitness, Intercon Segurança e Estacionamento - Três soluções em um só lugar. R. Mário Vital, 168 - Eldorado - Contagem - MG">
+    <meta name="keywords" content="moda fitness, atacado fitness, segurança eletrônica, portão automático, câmeras, estacionamento contagem">
+    <title>Saaddi + Intercon + Estacionamento | R. Mário Vital, 168 - Contagem</title>
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Saaddi, Intercon e Estacionamento - Tudo em um só lugar">
+    <meta property="og:description" content="Moda Fitness, Soluções em Segurança e Estacionamento no mesmo endereço em Contagem-MG">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Saaddi & Intercon",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Mário Vital, 168 - Box 69-71",
+        "addressLocality": "Contagem",
+        "addressRegion": "MG",
+        "addressCountry": "BR"
+      },
+      "telephone": "+5531971052809"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --bg-primary: #0F0F0F;
+            --bg-section-alt: #1A1A1A;
+            --text-primary: #FFFFFF;
+            --text-secondary: #CCCCCC;
+            --gold: #FFD700;
+            --gold-hover: #E6C200;
+            --gold-dark: #D4AF37;
+            --blue-vibrant: #1E90FF;
+            --green-tech: #00C853;
+            --border: #2E2E2E;
+            
+            --saaddi-bg: #000000;
+            --saaddi-gold: #D4AF37;
+            --saaddi-pink: #E91E63;
+            
+            --intercon-bg: #0A1A3F;
+            --intercon-gold: #FFD700;
+            
+            --parking-bg: #111111;
+            --parking-green: #00C853;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 15, 15, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .logo-svg {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .logo-text {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        
+        .logo-text .gold {
+            color: var(--gold);
+        }
+        
+        .logo-text .divider {
+            color: var(--text-secondary);
+            font-weight: 300;
+            margin: 0 0.25rem;
+        }
+        
+        .nav-links {
+            display: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+        
+        .whatsapp-fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            z-index: 999;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 3px solid var(--gold);
+        }
+        
+        .whatsapp-fixed:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+        }
+        
+        /* Hero */
+        .hero {
+            padding: 140px 20px 100px;
+            background: 
+                radial-gradient(ellipse at top, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+                linear-gradient(135deg, var(--bg-primary) 0%, #1a1a1a 100%);
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+        
+        .hero h1 {
+            font-size: clamp(2.2rem, 5vw, 4rem);
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--gold) 0%, #FFF 50%, var(--gold-dark) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: clamp(1rem, 2.5vw, 1.3rem);
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-ctas {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 1.1rem 2.5rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .btn:hover::before {
+            left: 100%;
+        }
+        
+        .btn-primary {
+            background: var(--gold);
+            color: #000;
+        }
+        
+        .btn-primary:hover {
+            background: var(--gold-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3);
+        }
+        
+        .btn-outline {
+            border: 2px solid var(--gold);
+            color: var(--gold);
+        }
+        
+        .btn-outline:hover {
+            background: var(--gold);
+            color: #000;
+            transform: translateY(-2px);
+        }
+        
+        .social-proof {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            color: var(--text-secondary);
+        }
+        
+        .proof-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 215, 0, 0.05);
+            border-radius: 50px;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+        
+        .proof-icon {
+            color: var(--gold);
+            font-size: 1.2rem;
+        }
+        
+        /* Section Base */
+        section {
+            padding: 80px 20px;
+        }
+        
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            text-align: center;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+        }
+        
+        /* Saaddi Section */
+        .saaddi-section {
+            background: linear-gradient(135deg, var(--saaddi-bg) 0%, #1a0a0a 100%);
+        }
+        
+        .saaddi-section .section-title {
+            background: linear-gradient(135deg, var(--saaddi-gold) 0%, var(--saaddi-pink) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .benefit-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--saaddi-gold);
+            box-shadow: 0 12px 32px rgba(212, 175, 55, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+        }
+        
+        .benefit-card:hover::before {
+            opacity: 1;
+        }
+        
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .benefit-card h3 {
+            color: var(--saaddi-gold);
+            margin-bottom: 0.5rem;
+        }
+        
+        .saaddi-cta {
+            text-align: center;
+        }
+        
+        .btn-saaddi {
+            background: var(--saaddi-gold);
+            color: #000;
+        }
+        
+        .btn-saaddi:hover {
+            background: var(--saaddi-pink);
+            color: white;
+        }
+        
+        /* Intercon Section */
+        .intercon-section {
+            background: linear-gradient(135deg, var(--intercon-bg) 0%, #051230 100%);
+        }
+        
+        .intercon-section .section-title {
+            color: var(--intercon-gold);
+        }
+        
+        .intercon-section .benefit-card:hover {
+            border-color: var(--intercon-gold);
+            box-shadow: 0 8px 24px rgba(255, 215, 0, 0.2);
+        }
+        
+        .intercon-section .benefit-card h3 {
+            color: var(--intercon-gold);
+        }
+        
+        .btn-intercon {
+            background: var(--intercon-gold);
+            color: #000;
+        }
+        
+        .btn-intercon:hover {
+            background: var(--blue-vibrant);
+            color: white;
+        }
+        
+        /* Parking Section */
+        .parking-section {
+            background: linear-gradient(135deg, var(--parking-bg) 0%, #1a1a1a 100%);
+        }
+        
+        .parking-section .section-title {
+            color: var(--parking-green);
+        }
+        
+        .parking-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .parking-card {
+            background: rgba(0, 200, 83, 0.1);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--parking-green);
+            text-align: center;
+        }
+        
+        .parking-card h3 {
+            color: var(--parking-green);
+            margin-bottom: 1rem;
+        }
+        
+        .btn-parking {
+            background: var(--parking-green);
+            color: white;
+        }
+        
+        .btn-parking:hover {
+            background: #00a344;
+        }
+        
+        /* Form Section */
+        .form-section {
+            background: var(--bg-section-alt);
+        }
+        
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-size: 1rem;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+        
+        /* Gallery */
+        .gallery {
+            background: var(--bg-primary);
+        }
+        
+        .gallery-slider {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+        
+        .gallery-track {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item {
+            min-width: 100%;
+            aspect-ratio: 16/9;
+            background: var(--bg-section-alt);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+        }
+        
+        .gallery-controls {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .gallery-btn {
+            background: var(--gold);
+            color: #000;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .gallery-btn:hover {
+            background: var(--gold-hover);
+        }
+        
+        /* FAQ */
+        .faq-section {
+            background: var(--bg-section-alt);
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: var(--bg-primary);
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .faq-question:hover {
+            background: rgba(255, 215, 0, 0.05);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-answer-content {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--text-secondary);
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s;
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background: var(--bg-primary);
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .testimonial-card {
+            background: var(--bg-section-alt);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-author {
+            color: var(--gold);
+            font-weight: 600;
+        }
+        
+        /* Map */
+        .map-section {
+            background: var(--bg-section-alt);
+        }
+        
+        .map-container {
+            max-width: 900px;
+            margin: 0 auto;
+            aspect-ratio: 16/9;
+            border-radius: 12px;
+            overflow: hidden;
+            background: var(--bg-primary);
+        }
+        
+        .map-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--bg-primary);
+            border-top: 1px solid var(--border);
+            padding: 3rem 20px 1rem;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto 2rem;
+        }
+        
+        .footer-section h3 {
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-section a:hover {
+            color: var(--gold);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-logo svg {
+            width: 40px;
+            height: 40px;
+        }
+        
+        .footer-logo-text {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--gold);
+        }
+        
+        /* Toast */
+        .toast {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            background: var(--green-tech);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            z-index: 1001;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s;
+        }
+        
+        .toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: block;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        @media (min-width: 768px) {
+            .nav-links {
+                display: flex;
+            }
+            
+            .mobile-menu-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Fixed WhatsApp Button -->
+    <a href="https://wa.me/5531971052809" class="whatsapp-fixed" aria-label="WhatsApp" target="_blank">💬</a>
+    
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Círculo externo dourado -->
+                    <circle cx="50" cy="50" r="48" fill="none" stroke="#FFD700" stroke-width="2"/>
+                    
+                    <!-- S estilizado (Saaddi) -->
+                    <path d="M 35 30 Q 40 25 50 30 Q 60 35 50 40 Q 40 45 50 50 Q 60 55 50 60 Q 40 65 35 60" 
+                          fill="none" stroke="#E91E63" stroke-width="3" stroke-linecap="round"/>
+                    
+                    <!-- Escudo (Intercon Segurança) -->
+                    <path d="M 50 35 L 60 40 L 60 55 Q 60 65 50 70 Q 40 65 40 55 L 40 40 Z" 
+                          fill="none" stroke="#1E90FF" stroke-width="2.5"/>
+                    
+                    <!-- Ponto central (estacionamento) -->
+                    <circle cx="50" cy="50" r="4" fill="#00C853"/>
+                    
+                    <!-- Detalhes decorativos -->
+                    <circle cx="50" cy="50" r="35" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.3"/>
+                </svg>
+                <div class="logo-text">
+                    <span class="gold">Saaddi</span>
+                    <span class="divider">+</span>
+                    <span class="gold">Intercon</span>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#saaddi">Saaddi</a>
+                <a href="#intercon">Intercon</a>
+                <a href="#estacionamento">Estacionamento</a>
+                <a href="#contato">Contato</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Três Soluções, Um Só Endereço</h1>
+            <p>Moda Fitness de alta qualidade, Segurança profissional para seu patrimônio e Estacionamento para sua comodidade - tudo em Contagem, MG</p>
+            <div class="hero-ctas">
+                <a href="https://wa.me/5531971052809" class="btn btn-primary" data-testid="button-whatsapp-hero">Fale no WhatsApp</a>
+                <a href="#contato" class="btn btn-outline" data-testid="button-visit">Como Chegar</a>
+            </div>
+            <div class="social-proof">
+                <div class="proof-item">
+                    <span class="proof-icon">✓</span>
+                    <span>Atendimento há mais de 10 anos</span>
+                </div>
+                <div class="proof-item">
+                    <span class="proof-icon">✓</span>
+                    <span>Garantia nos serviços</span>
+                </div>
+                <div class="proof-item">
+                    <span class="proof-icon">✓</span>
+                    <span>Localização privilegiada</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Saaddi Section -->
+    <section id="saaddi" class="saaddi-section">
+        <div class="container">
+            <h2 class="section-title">Saaddi — Moda Fitness</h2>
+            <p class="section-subtitle">Coleções exclusivas de moda fitness para mulheres | Atacado e Varejo</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">👗</div>
+                    <h3>Fabricação Própria</h3>
+                    <p>Peças únicas desenvolvidas com tecnologia e design exclusivo para máximo conforto</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💪</div>
+                    <h3>Alta Performance</h3>
+                    <p>Tecidos tecnológicos que acompanham seus movimentos com estilo e durabilidade</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Atacado e Varejo</h3>
+                    <p>Condições especiais para revendedoras e lojistas. Compre no atacado com preços exclusivos</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Tendências 2025</h3>
+                    <p>Coleções atualizadas seguindo as últimas tendências da moda fitness mundial</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📦</div>
+                    <h3>Pronta Entrega</h3>
+                    <p>Estoque disponível para retirada imediata ou envio rápido</p>
+                </div>
+            </div>
+            
+            <div class="saaddi-cta">
+                <a href="https://wa.me/5531971052809?text=Olá!%20Quero%20conhecer%20as%20coleções%20da%20Saaddi" class="btn btn-saaddi" data-testid="button-saaddi-whatsapp">Ver Catálogo no WhatsApp</a>
+                <a href="https://instagram.com/saaddiltda" class="btn btn-outline" data-testid="link-saaddi-instagram" target="_blank" style="margin-left: 1rem;">@saaddiltda</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Intercon Section -->
+    <section id="intercon" class="intercon-section">
+        <div class="container">
+            <h2 class="section-title">Intercon — Soluções em Segurança</h2>
+            <p class="section-subtitle">Proteja seu patrimônio com tecnologia e profissionalismo</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚪</div>
+                    <h3>Portão Eletrônico</h3>
+                    <p>Instalação, manutenção e automação de portões residenciais e comerciais</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📹</div>
+                    <h3>Câmeras de Segurança</h3>
+                    <p>Sistemas de CFTV com acesso remoto via celular. Monitore de qualquer lugar</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔐</div>
+                    <h3>Fechadura Digital</h3>
+                    <p>Controle de acesso inteligente com biometria, senha e cartão</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Concertina</h3>
+                    <p>Instalação de cercas de segurança profissionais para perímetros</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📞</div>
+                    <h3>Interfone Digital</h3>
+                    <p>Comunicação clara e segura entre portaria e residências</p>
+                </div>
+            </div>
+            
+            <div class="saaddi-cta">
+                <a href="https://wa.me/553133931118?text=Olá!%20Preciso%20de%20um%20orçamento%20de%20segurança" class="btn btn-intercon" data-testid="button-intercon-whatsapp">Solicitar Orçamento</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Estacionamento Section -->
+    <section id="estacionamento" class="parking-section">
+        <div class="container">
+            <h2 class="section-title">Estacionamento</h2>
+            <p class="section-subtitle">Vagas disponíveis para sua comodidade</p>
+            
+            <div class="parking-info">
+                <div class="parking-card">
+                    <h3>📍 Localização</h3>
+                    <p>Mesmo endereço da Saaddi</p>
+                    <p>Fácil acesso e seguro</p>
+                </div>
+                <div class="parking-card">
+                    <h3>🕐 Horário</h3>
+                    <p>Segunda a Sexta: 8h às 18h</p>
+                    <p>Sábado: 8h às 13h</p>
+                </div>
+                <div class="parking-card">
+                    <h3>💳 Valores</h3>
+                    <p>Consulte disponibilidade</p>
+                    <p>Mensalista e avulso</p>
+                </div>
+            </div>
+            
+            <div class="saaddi-cta">
+                <a href="#contato" class="btn btn-parking" data-testid="button-parking-map">Como Chegar</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Form Section -->
+    <section id="contato-form" class="form-section">
+        <div class="container">
+            <h2 class="section-title">Solicite um Atendimento</h2>
+            <p class="section-subtitle">Preencha o formulário e entraremos em contato via WhatsApp</p>
+            
+            <form class="form-container" id="contactForm">
+                <div class="form-group">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" required data-testid="input-name">
+                </div>
+                <div class="form-group">
+                    <label for="telefone">WhatsApp</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(31) 99999-9999" required data-testid="input-phone">
+                </div>
+                <div class="form-group">
+                    <label for="servico">Serviço de interesse</label>
+                    <select id="servico" name="servico" required data-testid="select-service">
+                        <option value="">Selecione...</option>
+                        <option value="Saaddi - Moda Fitness">Saaddi - Moda Fitness</option>
+                        <option value="Intercon - Portão Eletrônico">Intercon - Portão Eletrônico</option>
+                        <option value="Intercon - Câmeras">Intercon - Câmeras de Segurança</option>
+                        <option value="Intercon - Fechadura Digital">Intercon - Fechadura Digital</option>
+                        <option value="Intercon - Concertina">Intercon - Concertina</option>
+                        <option value="Intercon - Interfone">Intercon - Interfone Digital</option>
+                        <option value="Estacionamento">Estacionamento</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem (opcional)</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" data-testid="input-message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;" data-testid="button-submit-form">Enviar pelo WhatsApp</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">Nossos Trabalhos</h2>
+            <p class="section-subtitle">Veja alguns dos nossos projetos realizados</p>
+            
+            <div class="gallery-slider">
+                <div class="gallery-track" id="galleryTrack">
+                    <div class="gallery-item">
+                        <!-- Substituir por imagem real: /assets/saaddi-1.jpg -->
+                        <p>📸 Coleção Saaddi - Primavera/Verão</p>
+                    </div>
+                    <div class="gallery-item">
+                        <!-- Substituir por imagem real: /assets/intercon-1.jpg -->
+                        <p>📸 Sistema de Câmeras Instalado</p>
+                    </div>
+                    <div class="gallery-item">
+                        <!-- Substituir por imagem real: /assets/intercon-2.jpg -->
+                        <p>📸 Portão Eletrônico Automatizado</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-controls">
+                <button class="gallery-btn" onclick="moveGallery(-1)" data-testid="button-gallery-prev">← Anterior</button>
+                <button class="gallery-btn" onclick="moveGallery(1)" data-testid="button-gallery-next">Próximo →</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div class="faq-container">
+                <div class="faq-item" data-testid="faq-item-1">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>A Saaddi vende no atacado?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Sim! Trabalhamos tanto no varejo quanto no atacado. Entre em contato pelo WhatsApp para condições especiais para revendedoras.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-testid="faq-item-2">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>A Intercon oferece garantia nos serviços?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Sim, todos os nossos serviços possuem garantia. O período varia conforme o tipo de instalação. Consulte-nos para mais detalhes.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-testid="faq-item-3">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Vocês fazem instalação em toda região metropolitana?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Sim! Atendemos Contagem, Belo Horizonte e região metropolitana. Entre em contato para verificar disponibilidade na sua área.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-testid="faq-item-4">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Como funciona o estacionamento?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Oferecemos vagas para mensalistas e avulso. Consulte disponibilidade e valores pelo WhatsApp ou presencialmente.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-testid="faq-item-5">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Posso visitar a loja da Saaddi?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Com certeza! Estamos na R. Mário Vital, 168 - Box 69-71, Eldorado, Contagem. Venha conhecer nossas coleções pessoalmente!
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-testid="faq-item-6">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Quanto tempo leva para instalar um sistema de câmeras?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Depende do tamanho do projeto. Instalações residenciais básicas geralmente são concluídas em 1 dia. Fazemos uma avaliação técnica gratuita.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O Que Dizem Nossos Clientes</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"As peças da Saaddi são incríveis! Qualidade e conforto impecáveis. Já sou cliente há 2 anos e super recomendo!"</p>
+                    <p class="testimonial-author">— Maria S., Contagem</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"A Intercon instalou câmeras e portão eletrônico na minha casa. Profissionalismo do início ao fim. Estou muito satisfeito!"</p>
+                    <p class="testimonial-author">— Carlos R., BH</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Localização perfeita! Deixo meu carro no estacionamento com total segurança enquanto faço minhas compras."</p>
+                    <p class="testimonial-author">— Ana Paula L., Eldorado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Map Section -->
+    <section id="contato" class="map-section">
+        <div class="container">
+            <h2 class="section-title">Onde Estamos</h2>
+            <p class="section-subtitle">R. Mário Vital, 168 - Box 69-71 - Eldorado - Contagem - MG</p>
+            
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.872!2d-44.0542!3d-19.9325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa697679f7cd6b9%3A0x4d8d8f8f8f8f8f8f!2sR.%20M%C3%A1rio%20Vital%2C%20168%20-%20Eldorado%2C%20Contagem%20-%20MG%2C%2032315-160!5e0!3m2!1spt-BR!2sbr!4v1234567890!5m2!1spt-BR!2sbr"
+                    width="100%" 
+                    height="100%" 
+                    style="border:0; border-radius: 12px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Localização R. Mário Vital, 168 - Eldorado - Contagem - MG">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="48" fill="none" stroke="#FFD700" stroke-width="2"/>
+                        <path d="M 35 30 Q 40 25 50 30 Q 60 35 50 40 Q 40 45 50 50 Q 60 55 50 60 Q 40 65 35 60" 
+                              fill="none" stroke="#E91E63" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M 50 35 L 60 40 L 60 55 Q 60 65 50 70 Q 40 65 40 55 L 40 40 Z" 
+                              fill="none" stroke="#1E90FF" stroke-width="2.5"/>
+                        <circle cx="50" cy="50" r="4" fill="#00C853"/>
+                        <circle cx="50" cy="50" r="35" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.3"/>
+                    </svg>
+                    <div class="footer-logo-text">Saaddi + Intercon</div>
+                </div>
+                <h3>Saaddi Moda Fitness</h3>
+                <p>📱 (31) 97105-2809</p>
+                <p>📷 @saaddiltda</p>
+                <a href="https://wa.me/5531971052809">WhatsApp Saaddi</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Intercon Segurança</h3>
+                <p>📱 (31) 3393-1118</p>
+                <a href="https://wa.me/553133931118">WhatsApp Intercon</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Endereço</h3>
+                <p>R. Mário Vital, 168 - Box 69-71</p>
+                <p>Eldorado - Contagem - MG</p>
+                <p>📍 <a href="#contato">Ver no mapa</a></p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Horário</h3>
+                <p>Segunda a Sexta: 8h às 18h</p>
+                <p>Sábado: 8h às 13h</p>
+                <p>Domingo: Fechado</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Saaddi & Intercon. Todos os direitos reservados.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">Desenvolvido por <a href="#" style="color: var(--gold);">João Layon, SEO Soluções Digitais</a></p>
+        </div>
+    </footer>
+    
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+    
+    <!-- INSERIR ANALYTICS AQUI -->
+    <!-- Google Analytics / GA4:
+         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+         <script>
+           window.dataLayer = window.dataLayer || [];
+           function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+           gtag('config', 'UA-XXXXXXXXX-X');
+         </script>
+    -->
+    
+    <script>
+        // Gallery Slider
+        let currentSlide = 0;
+        const track = document.getElementById('galleryTrack');
+        const slides = track.children;
+        
+        function moveGallery(direction) {
+            currentSlide += direction;
+            if (currentSlide < 0) currentSlide = slides.length - 1;
+            if (currentSlide >= slides.length) currentSlide = 0;
+            
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+        
+        // Auto-play gallery
+        setInterval(() => moveGallery(1), 5000);
+        
+        // FAQ Toggle
+        function toggleFaq(element) {
+            const faqItem = element.parentElement;
+            faqItem.classList.toggle('active');
+        }
+        
+        // Contact Form
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nome = document.getElementById('nome').value;
+            const telefone = document.getElementById('telefone').value;
+            const servico = document.getElementById('servico').value;
+            const mensagem = document.getElementById('mensagem').value;
+            
+            // Determina qual WhatsApp usar baseado no serviço
+            let whatsappNumber = '5531971052809'; // Saaddi por padrão
+            if (servico.includes('Intercon')) {
+                whatsappNumber = '553133931118';
+            }
+            
+            const texto = `Olá! Meu nome é ${nome}.\n\nTenho interesse em: ${servico}\n\nTelefone: ${telefone}\n\n${mensagem ? 'Mensagem: ' + mensagem : ''}`;
+            const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(texto)}`;
+            
+            // Mostra toast
+            showToast('Redirecionando para o WhatsApp...');
+            
+            // Abre WhatsApp
+            setTimeout(() => {
+                window.open(url, '_blank');
+            }, 500);
+        });
+        
+        // Toast Function
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+        
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+<!-- 
+INSTRUÇÕES DE PERSONALIZAÇÃO:
+
+1. IMAGENS:
+   - Crie uma pasta /assets/ no mesmo diretório deste arquivo
+   - Adicione suas imagens: saaddi-1.jpg, intercon-1.jpg, etc.
+   - Substitua os placeholders na galeria pelos caminhos reais
+
+2. GOOGLE MAPS:
+   - Acesse https://www.google.com/maps
+   - Busque: R. Mário Vital, 168 - Eldorado - Contagem - MG
+   - Clique em "Compartilhar" > "Incorporar um mapa"
+   - Copie o <iframe> e substitua no placeholder da seção do mapa
+
+3. TELEFONES E LINKS:
+   - Saaddi WhatsApp: +5531 97105-2809
+   - Intercon WhatsApp: +5531 3393-1118
+   - Instagram Saaddi: @saaddiltda
+
+4. ANALYTICS:
+   - Descomente e configure o código do Google Analytics no final do HTML
+
+5. DEPLOY NO REPLIT:
+   - Faça upload deste arquivo como index.html
+   - Crie a pasta assets/ e adicione as imagens
+   - Configure o Replit para servir arquivos estáticos
+   - Teste todos os links de WhatsApp
+
+6. SEO:
+   - Revise meta tags e descriptions
+   - Adicione palavras-chave relevantes para sua região
+   - Configure o JSON-LD com informações completas
+
+DESENVOLVIDO POR: João Layon, SEO Soluções Digitais
+-->
